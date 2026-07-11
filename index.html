@@ -2,125 +2,167 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MONUA XVI | Conference Resources</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portal provisional de documentos oficiales de MONUA XVI."
+  >
+
+  <title>MONUA XVI | Recursos de la conferencia</title>
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
+      background-color: #f5f5f5;
       color: #1f1f1f;
     }
 
     header {
-      background: #111111;
-      color: white;
-      padding: 42px 20px;
+      background-color: #111111;
+      color: #ffffff;
+      padding: 48px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0 0 10px;
-      font-size: 2.2rem;
-      letter-spacing: 1px;
+      font-size: 2.3rem;
+      letter-spacing: 1.5px;
     }
 
     header p {
       margin: 0;
       color: #d6d6d6;
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
 
     main {
-      width: min(900px, 92%);
+      width: min(920px, 92%);
       margin: 40px auto;
     }
 
-    .notice {
-      background: white;
-      border-left: 4px solid #111111;
-      padding: 18px 20px;
+    .aviso {
       margin-bottom: 30px;
-      line-height: 1.6;
+      padding: 20px 22px;
+      background-color: #ffffff;
+      border-left: 4px solid #111111;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      line-height: 1.6;
+    }
+
+    .aviso strong {
+      display: block;
+      margin-bottom: 5px;
     }
 
     section {
-      background: white;
-      margin-bottom: 24px;
-      padding: 26px;
+      margin-bottom: 28px;
+      padding: 28px;
+      background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     }
 
     section h2 {
-      margin-top: 0;
-      margin-bottom: 18px;
-      font-size: 1.35rem;
-      border-bottom: 1px solid #dddddd;
-      padding-bottom: 12px;
+      margin: 0 0 8px;
+      font-size: 1.4rem;
     }
 
-    .document-list {
+    .descripcion-categoria {
+      margin: 0 0 20px;
+      color: #626262;
+      line-height: 1.5;
+    }
+
+    .lista-documentos {
       display: grid;
       gap: 12px;
     }
 
-    .document-link {
+    .enlace-documento {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 18px;
-      padding: 15px 16px;
+      padding: 16px 18px;
+      color: #1f1f1f;
+      background-color: #fafafa;
       border: 1px solid #dddddd;
       border-radius: 6px;
       text-decoration: none;
-      color: #1f1f1f;
-      background: #fafafa;
-      transition: background 0.2s ease, transform 0.2s ease;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
     }
 
-    .document-link:hover {
-      background: #eeeeee;
+    .enlace-documento:hover {
+      background-color: #eeeeee;
+      border-color: #c9c9c9;
       transform: translateY(-1px);
     }
 
-    .document-title {
-      font-weight: 600;
+    .enlace-documento:focus {
+      outline: 3px solid rgba(17, 17, 17, 0.2);
+      outline-offset: 2px;
     }
 
-    .document-action {
+    .nombre-documento {
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .accion-documento {
+      flex-shrink: 0;
+      color: #555555;
       font-size: 0.9rem;
       white-space: nowrap;
-      color: #555555;
     }
 
     footer {
-      text-align: center;
-      padding: 30px 20px;
+      padding: 32px 20px;
       color: #666666;
+      text-align: center;
       font-size: 0.9rem;
+      line-height: 1.6;
     }
 
     @media (max-width: 600px) {
+      header {
+        padding: 38px 18px;
+      }
+
       header h1 {
-        font-size: 1.8rem;
+        font-size: 1.85rem;
+      }
+
+      main {
+        width: min(94%, 920px);
+        margin-top: 28px;
       }
 
       section {
-        padding: 20px;
+        padding: 21px;
       }
 
-      .document-link {
-        align-items: flex-start;
+      .enlace-documento {
         flex-direction: column;
-        gap: 6px;
+        align-items: flex-start;
+        gap: 7px;
       }
     }
   </style>
@@ -130,86 +172,188 @@
 
   <header>
     <h1>MONUA XVI</h1>
-    <p>Conference Resources</p>
+    <p>Recursos de la conferencia</p>
   </header>
 
   <main>
 
-    <div class="notice">
-      This provisional portal provides access to the official academic and
-      conference documents of MONUA XVI while the official website is under
-      maintenance.
+    <div class="aviso">
+      <strong>Portal provisional de documentos oficiales</strong>
+
+      Este espacio permite consultar las guías académicas y demás recursos
+      oficiales de MONUA XVI mientras la página principal del modelo se
+      encuentra en mantenimiento.
     </div>
 
+    <!-- SGA DE NACIONES UNIDAS -->
     <section>
-      <h2>Academic Background Guides</h2>
+      <h2>SGA de Naciones Unidas</h2>
 
-      <div class="document-list">
+      <p class="descripcion-categoria">
+        Guías académicas correspondientes a los comités de la
+        Secretaría General Adjunta de Naciones Unidas.
+      </p>
 
-        <a class="document-link"
-           href="pdfs/security-council-background-guide.pdf"
-           target="_blank">
-          <span class="document-title">
-            United Nations Security Council
+      <div class="lista-documentos">
+
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • Asamblea General.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Asamblea General
           </span>
-          <span class="document-action">Open PDF</span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
         </a>
 
-        <a class="document-link"
-           href="pdfs/general-assembly-background-guide.pdf"
-           target="_blank">
-          <span class="document-title">
-            General Assembly
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • CEPAL.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            CEPAL
           </span>
-          <span class="document-action">Open PDF</span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
         </a>
 
-        <a class="document-link"
-           href="pdfs/presidential-council-background-guide.pdf"
-           target="_blank">
-          <span class="document-title">
+        <a
+          class="enlace-documento"
+          href="./Background Guide • Presidential Council.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
             Presidential Council
           </span>
-          <span class="document-action">Open PDF</span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
+        </a>
+
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • UNODC.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Oficina de las Naciones Unidas contra la Droga y el Delito
+            — UNODC
+          </span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
+        </a>
+
+        <a
+          class="enlace-documento"
+          href="./Background Guide • UNSC.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Consejo de Seguridad de las Naciones Unidas — UNSC
+          </span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
         </a>
 
       </div>
     </section>
 
+    <!-- SGA DE CRISIS -->
     <section>
-      <h2>Delegate Handbook</h2>
+      <h2>SGA de Crisis</h2>
 
-      <div class="document-list">
-        <a class="document-link"
-           href="pdfs/monua-xvi-delegate-handbook.pdf"
-           target="_blank">
-          <span class="document-title">
-            MONUA XVI Delegate Handbook
+      <p class="descripcion-categoria">
+        Guías académicas correspondientes a los comités de la
+        Secretaría General Adjunta de Crisis.
+      </p>
+
+      <div class="lista-documentos">
+
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • Ad hoc.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Comité Ad Hoc
           </span>
-          <span class="document-action">Open PDF</span>
-        </a>
-      </div>
-    </section>
 
-    <section>
-      <h2>Interconnection Manual</h2>
-
-      <div class="document-list">
-        <a class="document-link"
-           href="pdfs/monua-xvi-interconnection-manual.pdf"
-           target="_blank">
-          <span class="document-title">
-            MONUA XVI Interconnection Manual
+          <span class="accion-documento">
+            Abrir PDF
           </span>
-          <span class="document-action">Open PDF</span>
         </a>
+
+        <a
+          class="enlace-documento"
+          href="./Background Guide • GAC_Texan Side.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Gabinete de Crisis — Bando Texano
+          </span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
+        </a>
+
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • GAC_Bando Mexicano.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Gabinete de Crisis — Bando Mexicano
+          </span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
+        </a>
+
+        <a
+          class="enlace-documento"
+          href="./Guía Académica • BOD_The Office.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="nombre-documento">
+            Board of Directors — The Office
+          </span>
+
+          <span class="accion-documento">
+            Abrir PDF
+          </span>
+        </a>
+
       </div>
     </section>
 
   </main>
 
   <footer>
-    Modelo de Naciones Unidas de la Universidad de los Andes<br>
+    Modelo de Naciones Unidas de la Universidad de los Andes
+    <br>
     MONUA XVI · 2026
   </footer>
 
